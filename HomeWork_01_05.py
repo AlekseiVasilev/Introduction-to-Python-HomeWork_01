@@ -4,8 +4,8 @@ import math
 # - A (3,6); B (2,1) -> 5.09
 # - A (7,-5); B (1,-1) -> 7.21
 
-x_a, y_a = input('Введите координаты точек А через запятую: ').split(',')
-x_b, y_b = input('Введите координаты точек B через запятую: ').split(',')
+x_a, y_a = input('Введите координаты точки А через запятую: ').split(',')
+x_b, y_b = input('Введите координаты точки B через запятую: ').split(',')
 line_segment = int(math.sqrt((int(x_a) - int(x_b))**2 + (int(y_a) - int(y_b))**2)*100)/100  # Python - криво округляет round()
 print ('A (', x_a, ',', y_a, '); B (', x_b, ',', y_b, ')', '->', line_segment)
 
